@@ -1,56 +1,89 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1410,60:7a3b12,100:ff8a3d&height=190&section=header&text=cebin&fontSize=64&fontColor=ffffff&fontAlignY=36&desc=builder%20of%20AI%20assistants%20%26%20offline-first%20tools&descSize=16&descAlignY=58&animation=fadeIn" alt="cebin" />
+  <img src="./assets/header.svg" width="100%" alt="Cebin. AI assistants that talk back. An ember particle orb with orbit rings and a live voice waveform.">
 </p>
 
 <p align="center">
-  <a href="https://github.com/ccebin">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&duration=2800&pause=900&color=FF8A3D&center=true&vCenter=true&width=620&lines=Voice+AI+assistants+%26+agent+tooling;Offline-first+desktop+apps+that+just+work;Sketch+%E2%86%92+3D+furniture+in+the+browser;Linux+tinkerer+%C2%B7+CachyOS+%2B+Hyprland" alt="typing intro" />
-  </a>
+  <a href="#start-here"><b>Projects</b></a> &nbsp; / &nbsp;
+  <a href="#on-the-workbench-friday"><b>Workbench</b></a> &nbsp; / &nbsp;
+  <a href="https://github.com/ccebin/bakkal-pos-indir/releases/latest/download/BakkalPOS_Kurulum.exe"><b>Bakkal POS indir</b></a> &nbsp; / &nbsp;
+  <a href="#toolbox"><b>Toolbox</b></a>
 </p>
 
----
+<br>
 
-### 👋 Merhaba, ben Cebin
+Ben **Cebin**. I build assistants you can talk to, agents that drive the desktop, and software that keeps working when the internet doesn't.
 
-I build things that sit between people and machines: voice assistants that talk back in Turkish, agents that drive the desktop, and small business software that runs without the internet.
+Most of it starts as a late-night experiment on a CachyOS box and ends up as something people actually use, from a Turkish voice HUD to the checkout counter of a neighbourhood grocery shop.
 
-- 🎙️ Currently working on **F.R.I.D.A.Y.**, a Turkish voice assistant HUD
-- 🛒 Shipping **Bakkal POS** to real grocery shops
-- 🪑 Turning sketches into 3D furniture with **Cebin Draw**
-- 🐧 Daily driver: CachyOS + Hyprland, lots of dotfiles
+## Start here
 
-### 🧰 Stack
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <sub>01 / VOICE</sub>
+      <h3>F.R.I.D.A.Y.</h3>
+      <p>A Turkish voice assistant with a living HUD: an ember particle figure, Gemini Live voice, agent tools, phone integration and real system telemetry.</p>
+      <p><sub><code>Next.js</code> <code>React</code> <code>three.js</code> &nbsp;·&nbsp; private, in active development</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <sub>02 / RETAIL</sub>
+      <h3><a href="https://github.com/ccebin/bakkal-pos-indir">Bakkal POS</a></h3>
+      <p>Offline barcode point-of-sale for small grocery shops. Sales, stock, veresiye and reports, with signed per-machine licences.</p>
+      <p><a href="https://github.com/ccebin/bakkal-pos-indir/releases/latest/download/BakkalPOS_Kurulum.exe"><b>Download for Windows →</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <sub>03 / 3D</sub>
+      <h3>Cebin Draw</h3>
+      <p>Draw a rough sketch, get 3D furniture back. Runs on the web, the desktop and mobile.</p>
+      <p><sub><code>TypeScript</code> &nbsp;·&nbsp; private, in development</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <sub>04 / MOBILE</sub>
+      <h3>NOVA</h3>
+      <p>An iOS assistant that splits the work between on-device Core ML and frontier models, with live voice.</p>
+      <p><sub><code>SwiftUI</code> <code>Core ML</code> <code>Gemini</code> &nbsp;·&nbsp; private</sub></p>
+    </td>
+  </tr>
+</table>
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,ts,js,swift,go,nodejs,react,nextjs,tailwind,threejs,electron,qt,sqlite,linux,arch,bash,git&perline=9" alt="tech stack" />
+## On the workbench: F.R.I.D.A.Y.
+
+<p align="center">
+  <img src="./assets/workbench.svg" width="100%" alt="Terminal: npm run friday. Voice session connected, agent tools ready, phone link paired. Friday says: Merhaba Cebin. Bugün ne inşa ediyoruz?">
 </p>
 
-### 🚀 Projects
+The goal is an assistant that feels present: it listens, answers in Turkish, sees what the machine is doing, and can act on it. Everything else I build tends to borrow parts from it.
 
-| | Project | What it is | Built with |
-|---|---|---|---|
-| 🎙️ | **F.R.I.D.A.Y.** | Turkish voice AI assistant with a live HUD: Gemini Live voice, agent tools, phone integration, system telemetry | Next.js · React · three.js |
-| 🛒 | **[Bakkal POS](https://github.com/ccebin/bakkal-pos-indir)** | Offline barcode POS for small grocery shops: sales, stock, credit (veresiye) and reports | Python · PyQt6 · SQLite |
-| 🪑 | **Cebin Draw** | Sketch to 3D furniture, on web, desktop and mobile | TypeScript |
-| 📱 | **NOVA** | Native on-device and frontier AI assistant for iOS | SwiftUI · Core ML · Gemini |
-| 🖱️ | **Atlas** | Computer-use agent: AI that sees the screen and operates the desktop | Electron · TypeScript |
+## Also in the lab
 
-> 🛒 **Bakkal POS indir:** [BakkalPOS_Kurulum.exe](https://github.com/ccebin/bakkal-pos-indir/releases/latest/download/BakkalPOS_Kurulum.exe) (Windows)
+| Project | What it does |
+| :--- | :--- |
+| **JARVIS v2** | A local-first AI operating layer for Linux. One brain, many models, many tools, many workers. |
+| **Atlas** | A computer-use agent in Electron. The model sees the screen and operates the desktop. |
+| **Password Manager** | Cross-platform, zero-knowledge vault. AES-256-GCM core shared by desktop and browser extension. |
+| **AI Business Assistant** | Multi-tenant SaaS that answers WhatsApp and Instagram DMs for local businesses, with one-click human takeover. |
+| **Game Subtitle Translator** | Captures in-game subtitles with OCR and overlays a live translation. |
 
-### 🐍 Activity
+## Toolbox
+
+<p>
+  <img src="https://skillicons.dev/icons?i=py,ts,swift,go,react,nextjs,threejs,tailwind,electron,qt,sqlite,arch,linux&theme=dark" alt="Python, TypeScript, Swift, Go, React, Next.js, three.js, Tailwind, Electron, Qt, SQLite, Arch, Linux">
+</p>
+
+## Recent signal
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake.svg" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake.svg">
+    <img alt="Contribution graph being eaten by an ember snake" src="https://raw.githubusercontent.com/ccebin/ccebin/output/github-snake-dark.svg">
   </picture>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ccebin&color=ff8a3d&style=flat-square&label=profile+views" alt="profile views" />
-</p>
+<br>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff8a3d,40:7a3b12,100:1a1410&height=110&section=footer" alt="" />
+  <img src="./assets/footer.svg" width="100%" alt="Listen. Build. Ship.">
 </p>
