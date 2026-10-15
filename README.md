@@ -11,7 +11,7 @@
 
 <br>
 
-Ben **Cebin**. I build assistants you can talk to, agents that drive the desktop, and software that keeps working when the internet doesn't.
+I'm **Cebin**. I build assistants you can talk to, agents that drive the desktop, and software that keeps working when the internet doesn't.
 
 Most of it starts as a late-night experiment on a CachyOS box and ends up as something people actually use, from a Turkish voice HUD to the checkout counter of a neighbourhood grocery shop.
 
