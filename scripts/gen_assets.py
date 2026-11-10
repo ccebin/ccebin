@@ -19,13 +19,13 @@ SERIF_IT = TTFont(HERE / "fonts/DMSerifDisplay-Italic.ttf")
 MONO = TTFont("/usr/share/fonts/TTF/JetBrainsMono-Medium.ttf")
 MONO_B = TTFont("/usr/share/fonts/TTF/JetBrainsMono-Bold.ttf")
 
-BG = "#110c09"
-CREAM = "#f4e7d4"
-MUTED = "#b8946f"
-EMBER = "#ff8a3d"
-AMBER = "#f2b25c"
+BG = "#0f0d14"
+CREAM = "#f4dfc3"
+MUTED = "#9d93b3"
+EMBER = "#9b7ce1"
+AMBER = "#c4b0f0"
 JADE = "#52cf86"
-LINE = "#f2b25c"
+LINE = "#c4b0f0"
 
 random.seed(7)
 import os
@@ -79,7 +79,7 @@ def defs_common(w, h):
     return f"""
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
-    <feColorMatrix values="0 0 0 0 1  0 0 0 0 .85  0 0 0 0 .7  0 0 0 .09 0"/>
+    <feColorMatrix values="0 0 0 0 .8  0 0 0 0 .75  0 0 0 0 1  0 0 0 .09 0"/>
   </filter>
   <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
     <stop offset="60%" stop-color="#000" stop-opacity="0"/>
@@ -132,7 +132,7 @@ def header():
     # status chip
     chip = text(MONO, "ONLINE · LISTENING", 1288, 99, 13.5, CREAM, tracking=2.6)
     parts.append(
-        f'<rect x="1252" y="76" width="244" height="34" rx="17" fill="#1c140f" stroke="{LINE}" stroke-opacity=".4"/>'
+        f'<rect x="1252" y="76" width="244" height="34" rx="17" fill="#1d1a26" stroke="{LINE}" stroke-opacity=".4"/>'
         f'<circle cx="1272" cy="93" r="5" fill="{JADE}">'
         f'<animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle>{chip}'
     )
@@ -174,7 +174,7 @@ def header():
             ys.append(f"{OY + y * R:.1f}")
             os_.append(f"{0.12 + 0.88 * (z2 + 1) / 2:.2f}")
         size = random.choice((1.6, 2, 2.4, 2.8))
-        col = random.choice((EMBER, EMBER, AMBER, "#ffd2a6"))
+        col = random.choice((EMBER, EMBER, AMBER, "#e2d6fa"))
         dots.append(
             f'<circle r="{size}" cx="{xs[0]}" cy="{ys[0]}" opacity="{os_[0]}" fill="{col}">'
             f'<animate attributeName="cx" values="{";".join(xs)}" dur="{T}s" repeatCount="indefinite"/>'
@@ -187,7 +187,7 @@ def header():
     parts.append(
         f'<circle cx="{OX}" cy="{OY}" r="70" fill="url(#core)">'
         f'<animate attributeName="r" values="62;76;62" dur="3.2s" repeatCount="indefinite"/></circle>'
-        f'<circle cx="{OX}" cy="{OY}" r="14" fill="#fff6e8"/>'
+        f'<circle cx="{OX}" cy="{OY}" r="14" fill="#f6f1ff"/>'
     )
 
     # rising embers
@@ -239,7 +239,7 @@ def header():
     defs = f"""
   <radialGradient id="halo"><stop offset="0" stop-color="{EMBER}" stop-opacity=".22"/>
     <stop offset=".45" stop-color="{EMBER}" stop-opacity=".06"/><stop offset="1" stop-color="{EMBER}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="core"><stop offset="0" stop-color="#fff3df"/><stop offset=".25" stop-color="#ffc38a" stop-opacity=".95"/>
+  <radialGradient id="core"><stop offset="0" stop-color="#f1ebff"/><stop offset=".25" stop-color="#c9b6f5" stop-opacity=".95"/>
     <stop offset=".6" stop-color="{EMBER}" stop-opacity=".45"/><stop offset="1" stop-color="{EMBER}" stop-opacity="0"/></radialGradient>
   <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{AMBER}"/><stop offset="1" stop-color="{EMBER}"/></linearGradient>"""
     return svg(W, H, "".join(parts), defs, "Cebin. AI assistants that talk back.")
@@ -252,7 +252,7 @@ def terminal():
     parts = [frame(W, H)]
     wx, wy, ww, wh = 110, 92, 1380, 292
     parts.append(
-        f'<rect x="{wx}" y="{wy}" width="{ww}" height="{wh}" rx="14" fill="#18110d" stroke="{LINE}" stroke-opacity=".3"/>'
+        f'<rect x="{wx}" y="{wy}" width="{ww}" height="{wh}" rx="14" fill="#1a1722" stroke="{LINE}" stroke-opacity=".3"/>'
         f'<path d="M{wx} {wy + 44}H{wx + ww}" stroke="{LINE}" stroke-opacity=".2"/>'
     )
     for i, c in enumerate(("#ff5f57", "#febc2e", "#28c840")):
