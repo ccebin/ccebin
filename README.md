@@ -5,7 +5,6 @@
 <p align="center">
   <a href="#start-here"><b>Projects</b></a> &nbsp; / &nbsp;
   <a href="#on-the-workbench-friday"><b>Workbench</b></a> &nbsp; / &nbsp;
-  <a href="https://github.com/ccebin/bakkal-pos-indir/releases/latest/download/BakkalPOS_Kurulum.exe"><b>Bakkal POS indir</b></a> &nbsp; / &nbsp;
   <a href="#toolbox"><b>Toolbox</b></a>
 </p>
 
@@ -13,37 +12,29 @@
 
 I'm **Cebin**. I build assistants you can talk to, agents that drive the desktop, and software that keeps working when the internet doesn't.
 
-Most of it starts as a late-night experiment on a CachyOS box and ends up as something people actually use, from a Turkish voice HUD to the checkout counter of a neighbourhood grocery shop.
+Most of it starts as a late-night experiment on a CachyOS box and ends up as something people actually use, from a Turkish voice HUD to a design tool that furniture makers use on site.
 
 ## Start here
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <sub>01 / VOICE</sub>
       <h3>F.R.I.D.A.Y.</h3>
       <p>A Turkish voice assistant with a living HUD: an ember particle figure, Gemini Live voice, agent tools, phone integration and real system telemetry.</p>
       <p><sub><code>Next.js</code> <code>React</code> <code>three.js</code> &nbsp;·&nbsp; private, in active development</sub></p>
     </td>
-    <td width="50%" valign="top">
-      <sub>02 / RETAIL</sub>
-      <h3><a href="https://github.com/ccebin/bakkal-pos-indir">Bakkal POS</a></h3>
-      <p>Offline barcode point-of-sale for small grocery shops. Sales, stock, veresiye and reports, with signed per-machine licences.</p>
-      <p><a href="https://github.com/ccebin/bakkal-pos-indir/releases/latest/download/BakkalPOS_Kurulum.exe"><b>Download for Windows →</b></a></p>
+    <td width="33%" valign="top">
+      <sub>02 / DESKTOP</sub>
+      <h3>Vox</h3>
+      <p>Voice control for Windows 11 that never talks back. A small glass capsule slides down from the top of the screen, and a desk-robot face answers with chirps, moods and sound effects. Runs fully local.</p>
+      <p><sub><code>Python</code> <code>faster-whisper</code> &nbsp;·&nbsp; private, in development</sub></p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <sub>03 / 3D</sub>
-      <h3>Cebin Draw</h3>
-      <p>Draw a rough sketch, get 3D furniture back. Runs on the web, the desktop and mobile.</p>
-      <p><sub><code>TypeScript</code> &nbsp;·&nbsp; private, in development</sub></p>
-    </td>
-    <td width="50%" valign="top">
-      <sub>04 / MOBILE</sub>
-      <h3>NOVA</h3>
-      <p>An iOS assistant that splits the work between on-device Core ML and frontier models, with live voice.</p>
-      <p><sub><code>SwiftUI</code> <code>Core ML</code> <code>Gemini</code> &nbsp;·&nbsp; private</sub></p>
+    <td width="33%" valign="top">
+      <sub>03 / FURNITURE</sub>
+      <h3>Dolapist</h3>
+      <p>Sketch a cabinet by hand and get a 3D model, a cut list and a quote back. Built for furniture makers, on the phone, the web and the desktop.</p>
+      <p><sub><code>TypeScript</code> <code>three.js</code> <code>Capacitor</code> &nbsp;·&nbsp; private, in development</sub></p>
     </td>
   </tr>
 </table>
